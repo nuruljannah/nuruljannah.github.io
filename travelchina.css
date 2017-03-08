@@ -1,0 +1,36 @@
+ul.nav li {
+
+    display: inline-block;
+    padding-right: 10px;
+    background-color: red;
+
+}
+
+ul.nav a{
+  color:white;
+}
+
+.important {  /* betul*/
+  font-weight:bold;
+}
+ul.nav li a {
+  color: white;
+}
+#about_blue {
+  background-color:#6495ED;
+  border:3px solid black;
+  margin-bottom: 20px;
+
+}
+.class1 {
+  color: blue;
+}
+
+#about_yellow {
+  background-color:#F0E68C;
+  border:3px solid black;
+}
+
+.class2 {
+  color: orange;
+}

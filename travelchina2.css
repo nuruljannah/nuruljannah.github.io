@@ -1,0 +1,30 @@
+ul.nav li {
+
+    display: inline-block;
+    padding-right: 10px;
+    background-color: red;
+
+}
+ul.nav a{   /* ul is unordered list , nav is navigation list, a defines a hyperlink used to link a page to another  */
+  color:white;
+  background-color:#696969;
+}
+
+.important {  /*sdafdsa betul*/
+  font-weight:bold;
+}
+ul.nav li a { /* li defines list item */
+  color: white;
+}
+#about_blue {
+  background-color:#6495ED;
+  /*border:3px solid black;*/
+  margin-bottom: 20px;
+
+}
+
+
+#about_yellow {
+  background-color:#F0E68C;
+  /*border:3px solid black;*/
+}
