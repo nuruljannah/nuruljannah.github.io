@@ -1,30 +1,360 @@
-ul.nav li {
-
-    display: inline-block;
-    padding-right: 10px;
-    background-color: red;
+@font-face {
+    font-family: Questrial;
+    src: url(http://fonts.gstatic.com/s/questrial/v6/MYWJ4lYm5dbZ1UBuYox79FtXRa8TVwTICgirnJhmVJw.woff2);
 
 }
-ul.nav a{   /* ul is unordered list , nav is navigation list, a defines a hyperlink used to link a page to another  */
-  color:white;
-  background-color:#696969;
+
+
+
+#header {
+  background-color: white;
+  overflow: hidden;
+}
+.css-slider-wrapper {
+  display: block;
+  background: #FFF;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top:0;
+  bottom: 0;
 }
 
-.important {  /*sdafdsa betul*/
-  font-weight:bold;
+.slider {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  left: 10;
+  top: 0;
+  opacity: 1;
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  -webkit-transition: -webkit-transform 1600ms;
+  transition: -webkit-transform 1600ms, transform 1600ms;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
-ul.nav li a { /* li defines list item */
+
+/* Slides Background Color */
+.slide-1 {
+  background: #F4A460;
+  left: 0;
+}
+.slide-2 {
+  background:#B0E0E6;
+  left: 100%
+}
+.slide-3 {
+  background: #9ea6b3;
+  left: 200%
+}
+.slide-4 {
+  background: #b1a494;
+  left: 300%;
+}
+.slider {
+  display: flex;
+  justify-content: flex-start;
+}
+.slider-content {
+  width: 635px;
+  padding-left: 100px;
+}
+.slider h2 {
+  color: #333333;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.2;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+  margin-top: 0;
+  letter-spacing: 2px;
+}
+
+.slider h4 {
+  font-size: 22px;
+  font-family: "Oswald";
+  color: rgba(51, 51, 51, 0.349);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+}
+
+.slider > img {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  -webkit-transform: translateX(500px);
+  transform: translateX(500px);
+}
+
+.slide-1 > img {
+  right: 0;
+}
+
+.buy-now-btn {
+  background-color: #ea2e49;
+  width: 220px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 100;
+  color: #fff;
+  text-align: left;
+  padding-left: 35px;
+  position: relative;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.buy-now-btn:hover {
+  box-shadow: 0px 0px 60px -17px rgba(51,51,51,1);
+}
+
+.buy-now-btn:after {
+  content: 'Buy Now';
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  right: 35px;
+  top: 18px;
+}
+
+.slider .buy-now-btn:focus,
+.navigation .login-btn:focus {
+  outline: none;
+}
+/* Animations */
+.slider h2 {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1s; /* Safari */
+  transition-delay: 1s;
+}
+.slider h4 {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1.4s; /* Safari */
+  transition-delay: 1.4s;
+}
+.slider > img {
+  -webkit-transition: opacity 800ms, -webkit-transform 800ms;
+  transition: transform 800ms, opacity 800ms;
+  -webkit-transition-delay: 1.2s; /* Safari */
+  transition-delay: 1.2s;
+}
+/* Slider Slide Effect */
+.slide-radio1:checked ~ .slider {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.slide-radio2:checked ~ .slider {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.slide-radio3:checked ~ .slider {
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+.slide-radio4:checked ~ .slider {
+  -webkit-transform: translateX(-300%);
+  transform: translateX(-300%);
+}
+
+.slide-radio1:checked ~ .slide-1 h2,
+.slide-radio2:checked ~ .slide-2 h2,
+.slide-radio3:checked ~ .slide-3 h2,
+.slide-radio4:checked ~ .slide-4 h2,
+.slide-radio1:checked ~ .slide-1 h4,
+.slide-radio2:checked ~ .slide-2 h4,
+.slide-radio3:checked ~ .slide-3 h4,
+.slide-radio4:checked ~ .slide-4 h4,
+.slide-radio1:checked ~ .slide-1 > img,
+.slide-radio2:checked ~ .slide-2 > img,
+.slide-radio3:checked ~ .slide-3 > img,
+.slide-radio4:checked ~ .slide-4 > img {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1
+}
+
+ #logo {
+     background-color: 	#000000;
+ }
+nav {
+  font-family: Questrial;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #000000;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+article {
+  float:left;
   color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
 }
-#about_blue {
-  background-color:#6495ED;
-  /*border:3px solid black;*/
-  margin-bottom: 20px;
+bold{
+  font-weight: bold;
+  font-size: 24px;
+}
+cursive{
+  font-family: 'Pacifico', cursive;
+  font-size: 23px;
+}
+li {
+    float: right;
+    list-style-type: none;
+    color: white;
+    }
+li a {
+    display: block;
+    padding: 10px;
+}
+#picture {
+  background-size: 100% 100%;
+  margin-bottom:0px;
+  margin-top: 0px;
+  background-color: #E9967A;
+  overflow: hidden;
+}
 
+.first{
+  background-image: url("http://www.motox1wallpaper.com/wp-content/1HD/City/FTP3/1680x1050/Beijing%20Landmark%20Nest%20wallpaper%20HD%201680x1050.jpg");
+  background-size: 100% 100%;
+   background-repeat: no-repeat;
+  padding: 5px 5px 5px 5px;
+  height: 300px;
+  width: 50%;
+  margin-bottom: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+
+}
+.second{
+  background-image: url("http://il5.picdn.net/shutterstock/videos/2873713/thumb/1.jpg");
+  background-size: 100% 100%;
+   background-repeat: no-repeat;
+  padding: 5px 5px 5px 5px;
+  height: 300px;
+  width: 50%;
+  margin-bottom: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+
+}
+.dessert{
+  background-image: url("http://wallpapercave.com/wp/RgKGAGT.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 5px 5px 5px 5px;
+  height: 300px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+
+}
+.price {
+  float: right;
+}
+
+#cities{
+background-color: #696969;
+margin-top: 600px;
+margin-left: 280px;
+margin-right: 280px;
+margin-bottom: 80px;
+border-radius: 25px;
+padding-top: 20px;
+padding-bottom: 20px;
+overflow: hidden;
+}
+
+#review{
+  background-color: #E9967A;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  overflow: hidden;
 }
 
 
-#about_yellow {
-  background-color:#F0E68C;
-  /*border:3px solid black;*/
+h1 {
+  font-family: 'Clicker Script', cursive;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+p {
+  font-family:sans-serif;
+  font-size: 20px;
+  margin-left: 20px;
+}
+p1{
+font-family: 'Noto Serif', serif;
+}
+
+.col-sm-4 {
+padding-left: 250px;
+}
+
+small{
+  display:block;
+
+  padding-left: 60px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+
+}
+
+.img-circle{
+
+display: block;
+margin: auto;
+height: 120px;
+border-top-right-radius: 30px;
+border-bottom-left-radius: 30px;
+
+}
+
+#explanation {
+  text-align: center;
+  padding-top: 16px;
+  font-family: 'Noto Serif', serif;
+  font-size: 14px;
+}
+cfg{
+  font-family: Questrial;
+  font-weight: bold;
+  font-size: 18px;
+
 }

@@ -2,60 +2,121 @@
 <html>
     <head>
         <title>Travel China</title>
-        <link rel="stylesheet" type="text/css" href="travelchina2.css">
+        <link rel="stylesheet" type="text/css" href="travelchina2.css" href="https://fonts.googleapis.com/css?family=Playfair+Display"   />
+        <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+        crossorigin="anonymous"></script>
+        <script src="jquery.js"></script>
+
     </head>
     <body>
-        <ul class='nav'>
-            <li><a href="#explanation">Home</a></li>
-            <li><a href="#about_blue">About blue</a></li>
-            <li><a href="#about_yellow">About yellow</a></li>
-        </ul>
+        <div id='header'>
+          <nav style="height: 60px">
+            <article><bold>Travel </bold><cursive>China</cursive></article>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Reference</a></li>
+          </nav>
+        </div>
 
-        <div id='page_content'>
-            <img scr="china.jpg">
-            <h1>All about colours</h1>
+        <div class="css-slider-wrapper" style="height 200px">
+          <input type="radio" name="slider" class="slide-radio1" checked id="slider_1">
+          <input type="radio" name="slider" class="slide-radio2" id="slider_2">
+          <input type="radio" name="slider" class="slide-radio3" id="slider_3">
+          <input type="radio" name="slider" class="slide-radio4" id="slider_4">
+          <!-- Slider #1 -->
+            <div class="slider slide-1">
+              <img src="china.jpg" alt="">
+              <div class="slider-content">
+                <h4>New Product</h4>
+                <h2>Denim Longline T-Shirt Dress With Split</h2>
+                <button type="button" class="buy-now-btn" name="button">$130</button>
+              </div>
+            </div>
 
-            <div id='explanation'>
-                <p>This is a page about colours. You need to fix it so that:</p>
-                <ul>
-                    <li>The sections about blue and yellow have 3px solid black borders.</li>
-                    <li>The 'About blue' has a light blue (#6495ED) background.</li>
-                    <li>The 'About yellow' has a light yellow (#FFEBCD) background.</li>
-                    <li>The list of points in the 'About blue' section should be in blue text (but the paragraph text shouldn't be).</li>
-                    <li>The list of points in the 'About yellow' section should be in orange text (but the paragraph text shouldn't be).</li>
-                    <li>The final item in both colour section lists is the most important. It should be in font size 16px, with font weight bold.</li>
-                    <li>The navigation at the top should have a red background with white text.</li>
-                </ul>
+            <!-- Slider #2 -->
+            <div class="slider slide-2">
+              <img src="china1.jpg" alt="">
+              <div class="slider-content">
+                <h4>New Product</h4>
+                <h2>Denim Longline T-Shirt Dress With Split</h2>
+                <button type="button" class="buy-now-btn" name="button">$130</button>
+              </div>
 
             </div>
 
-            <div id='about_blue' class='color-info'>
-                <h2>About blue</h2>
+            <!-- Slider #3 -->
+            <div class="slider slide-3">
+              <img src="china3.jpg" alt="">
+              <div class="slider-content">
+                <h4>New Product</h4>
+                <h2>Denim Longline T-Shirt Dress With Split</h2>
+                <button type="button" class="buy-now-btn" name="button">$130</button>
+              </div>
+            </div>
 
-                <p>This section is all about the colour blue. This text should be black.</p>
 
-                <ul class='class1'>
-                    <li>This is an unordered list.</li>
-                    <li>It contains some stuff about the colour blue.</li>
-                    <li>The text should be blue.</li>
-                    <li class='important'>The biggest blue animal in the world is the blue whale.</li>
-                </ul>
+            <!-- Slider #4 -->
+            <div class="slider slide-4">
+              <img src="china4.jpg" alt="">
+              <div class="slider-content">
+                <h4>New Product</h4>
+                <h2>Denim Longline T-Shirt Dress With Split</h2>
+                <button type="button" class="buy-now-btn" name="button">$130</button>
+              </div>
 
             </div>
-/* span testing and the class and div learnt*/
-            <div id='about_yellow' class="color-info">
-                <h2>About yellow</h2>
+        </div>
 
-                <p>The section is all about the colour yellow. This text should be black.</p>
-
-                <ul class="class2">
-                    <li>This is an unordered list.</li>
-                    <li>It contains some stuff about the colour yellow.</li>
-                    <li>The text <span class='important'>should be orange.</li>
-                    <li class='important'>The tastiest yellow fruit is the banana - much nicer than lemons.</li>
-                </ul>
-
+        <div id='cities' class='color-info1'>
+          <h1>China Cities</h1>
+          <p>This section is all about the colour blue. This text should be black.</p>
+          <div id='first' class="first">
+            <p>Beijing <span class="price">$14</span><br />
+              <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
+          </div>
+          <div id='second' class="second">
+            <p>Guangzhao <span class="price">$22</span><br />
+              <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
+          </div>
+          <div id='third' class="dessert">
+            <p> Shanghai<span class="price">$8</span><br />
+              <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+          </div>
+           <br style="clear: left;" />
+         </div>
+        <div id='review' class="color-info">
+            <h1>Reviews</h1>
+            <div class='col-sm-4' style="width: 1200px;">
+             <div style="float: left; width: 300px;">
+               <img src='smile3.jpg' class='img-circle' width="200px">
+               <blockquote><p1>Our two weeks trip to China couldn't be more exciting! We get to learn about Chinese history and culture</p1>
+               </blockquote>
+               <small>Mrs. Claudia, Bristol</small>
+             </div>
+             <div style="float: left; width: 300px;" >
+               <img src='smile1.jpg' class='img-circle' width="200px">
+               <blockquote><p1>China has got more that what tourist really expect. Dont just bother to go the bustling cities, try to explore the suburbs. So many GEMS!</p1>
+               </blockquote>
+               <small>Elizabeth, Manchester</small>
+             </div>
+             <div style="float: left; width: 300px;">
+               <img src='smile2.jpg' class='img-circle' width="200px">
+               <blockquote><p1>There is so much things to be experienced in China. Food is the one of them. They've got many finger licking good Food! </p1>
+               </blockquote>
+               <small> Benjamin, London </small>
+             </div>
+             <br style="clear: left;" />
             </div>
+        </div>
+        <div id='explanation'>
+          <p2>This page made by Eve and Jannah. With utmost gratitude for <cfg> Sheffield Code First Girl Programme</cfg></p2>
+        </div>
 
     </body>
+
 </html>
