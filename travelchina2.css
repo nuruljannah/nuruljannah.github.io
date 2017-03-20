@@ -4,12 +4,34 @@
 
 }
 
-
-
-#header {
-  background-color: white;
-  overflow: hidden;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: 	#D2B48C;
+}
+
 .css-slider-wrapper {
   display: block;
   background: #FFF;
@@ -18,12 +40,14 @@
   left: 0;
   right: 0;
   top:0;
-  bottom: 0;
+  /*bottom: 0;*/
+  height: 100%;
+  overflow: hidden;
 }
 
 .slider {
   width: 100%;
-  height: 90%;
+  height: 100%;
   position: absolute;
   left: 10;
   top: 0;
@@ -39,6 +63,7 @@
   transition: -webkit-transform 1600ms, transform 1600ms;
   -webkit-transform: scale(1);
   transform: scale(1);
+
 }
 
 /* Slides Background Color */
@@ -105,7 +130,7 @@
 .slide-1 > img {
   right: 0;
 }
-
+/*
 .buy-now-btn {
   background-color: #ea2e49;
   width: 220px;
@@ -121,9 +146,9 @@
   position: relative;
   cursor: pointer;
   transition: all .2s;
-}
+}*/
 
-.buy-now-btn:hover {
+/*.buy-now-btn:hover {
   box-shadow: 0px 0px 60px -17px rgba(51,51,51,1);
 }
 
@@ -135,7 +160,7 @@
   position: absolute;
   right: 35px;
   top: 18px;
-}
+}*/
 
 .slider .buy-now-btn:focus,
 .navigation .login-btn:focus {
@@ -194,52 +219,44 @@
   transform: translateX(0);
   opacity: 1
 }
+#header {
+ overflow: hidden;
+  margin-top: 650px;
 
+}
  #logo {
-     background-color: 	#000000;
+    background-color: #b7a986;
+     margin-top: 20px;
+     overflow: hidden;
  }
-nav {
-  font-family: Questrial;
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #000000;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1;
+
+ .logo_style{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin:auto;
+   height:400px;
+   width:700px;
+ }
+ #intro{
+   height:400px;
+   width:1200px;
+   display: block;
+   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 25px;
+   overflow: hidden;
+ }
+.kids{
+  display: block;
+  padding-top: 50px;
+  padding-left: 30px;
+  height:100%;
+  width: 100%;
+  /*width:450px;*/
 }
-article {
-  float:left;
-  color: white;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-}
-bold{
-  font-weight: bold;
-  font-size: 24px;
-}
-cursive{
-  font-family: 'Pacifico', cursive;
-  font-size: 23px;
-}
-li {
-    float: right;
-    list-style-type: none;
-    color: white;
-    }
-li a {
-    display: block;
-    padding: 10px;
-}
-#picture {
-  background-size: 100% 100%;
-  margin-bottom:0px;
-  margin-top: 0px;
-  background-color: #E9967A;
-  overflow: hidden;
-}
+
 
 .first{
   background-image: url("http://www.motox1wallpaper.com/wp-content/1HD/City/FTP3/1680x1050/Beijing%20Landmark%20Nest%20wallpaper%20HD%201680x1050.jpg");
@@ -288,9 +305,9 @@ li a {
 
 #cities{
 background-color: #696969;
-margin-top: 600px;
-margin-left: 280px;
-margin-right: 280px;
+margin-top: 50px;
+margin-left: 100px;
+margin-right: 100px;
 margin-bottom: 80px;
 border-radius: 25px;
 padding-top: 20px;
@@ -320,6 +337,7 @@ p {
 }
 p1{
 font-family: 'Noto Serif', serif;
+
 }
 
 .col-sm-4 {
@@ -345,7 +363,12 @@ border-top-right-radius: 30px;
 border-bottom-left-radius: 30px;
 
 }
-
+.api{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow:hidden;
+}
 #explanation {
   text-align: center;
   padding-top: 16px;
